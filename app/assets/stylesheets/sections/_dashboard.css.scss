@@ -6,6 +6,9 @@ body.dashboard {
   background-color: #2A271F;
   min-height: 100%;
   width: 100%;
+  -moz-transform: scale(0.6, 0.6); /* Moz-browsers */
+  zoom: 0.6; /* Other non-webkit browsers */
+  zoom: 60%; /* Webkit browsers */
 
   .warnings {
     position: absolute;
