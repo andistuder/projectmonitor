@@ -6,9 +6,6 @@ body.dashboard {
   background-color: #2A271F;
   min-height: 100%;
   width: 100%;
-  -moz-transform: scale(0.6, 0.6); /* Moz-browsers */
-  zoom: 0.6; /* Other non-webkit browsers */
-  zoom: 60%; /* Webkit browsers */
 
   .warnings {
     position: absolute;
@@ -112,6 +109,14 @@ body.dashboard {
   }
 }
 
+@media only screen and (max-device-width:1080px){
+  body.dashboard {
+    -moz-transform: scale(0.6, 0.6); /* Moz-browsers */
+    zoom: 0.6; /* Other non-webkit browsers */
+    zoom: 60%; /* Webkit browsers */
+  }
+}
+
 .clear {
   height:75px;
   clear: both;
@@ -182,7 +187,15 @@ ol.projects {
 
 .one-tile, .two-tile {
   article {
-    width: 1050px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-device-width:1080px){
+  .one-tile, .two-tile {
+    article {
+      width: 1050px;
+    }
   }
 }
 
