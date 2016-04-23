@@ -93,6 +93,19 @@ article.build {
   }
 }
 
+@media only screen and (max-device-width:1080px){
+  .one-tile {
+    article.build {
+      aside {
+        ol {
+          li {
+            width: 90px;
+          }
+        }
+      }
+    }
+  }
+}
 
 .two-tile {
   article.build {
@@ -223,4 +236,3 @@ article.build {
     }
   }
 }
-
